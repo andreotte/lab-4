@@ -26,8 +26,9 @@ namespace lab4
                     play = false;
                 }
             }
-
         }
+
+        // Method to collect user input
         public static int CollectInput()
         {
             Console.WriteLine("Enter an integer greater than 0:");
@@ -35,6 +36,7 @@ namespace lab4
             int number;
             int.TryParse(userInput, out number);
 
+            // user input validation
             if (number == 0)
             {
                 Console.WriteLine("Invalid input.");
@@ -45,17 +47,20 @@ namespace lab4
                 return number;
             }
         }
-
+        
+        // Method to square user input
         public static int SquareNumber(int number)
         {
             return Convert.ToInt16(Math.Pow(number, 2));
         }
 
+        // Method to cube user input
         public static int CubeNumber(int number)
         {
             return Convert.ToInt16(Math.Pow(number, 3));
         }
 
+        // Method to display table of squarred and cubed user inputs
         public static void DisplayResults(int input)
         {
             Console.WriteLine("Number   Squared   Cubed");
