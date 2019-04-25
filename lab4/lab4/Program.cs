@@ -20,7 +20,7 @@ namespace lab4
                 DisplayResults(number);
 
                 Console.WriteLine("Would you like to continue playing? (y/n)");
-                string continuePlaying = Console.ReadLine().ToLower();
+                string continuePlaying = Console.ReadLine().ToLower().Trim();
                 if (continuePlaying == "no" || continuePlaying == "n")
                 {
                     play = false;
